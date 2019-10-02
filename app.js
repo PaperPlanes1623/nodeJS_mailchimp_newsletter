@@ -36,7 +36,7 @@ app.post("/", function (req, res) {
     url: "https://us20.api.mailchimp.com/3.0/lists/69faa91ebb",
     method: 'POST',
     headers: {
-      "Authorization": "dylan1 16c239a23e4e56615ba6172c4f250bad-us20"
+      "Authorization": "dylan1 f24c44a35e1a73b022387316253b7c6d-us20"
     },
     body: jsonData
   };
@@ -59,11 +59,11 @@ app.post("/failure", function (req, res) {
   res.redirect("/");
 })
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server runing on port 3000");
 })
 
 //api key
-// 16c239a23e4e56615ba6172c4f250bad-us20
+// f24c44a35e1a73b022387316253b7c6d-us20
 //list id
 // 69faa91ebb
